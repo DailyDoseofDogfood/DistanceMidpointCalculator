@@ -1,5 +1,5 @@
 # **Distance and Midpoint calculator** *(dmcalculator)* 
-### This program has three functions:
+### This very simple program has three functions:
 
 **Distance:** Finds the distance between two points. 
 
