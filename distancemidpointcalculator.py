@@ -3,6 +3,7 @@ from decimal import Decimal
 if __name__ == "__main__":
     print("Distance and Midpoint calculator")
 
+
     def distance():
         #user defines points
         x1, y1 = input("[Distance] What is the first set of points? Use format: \"x, y\"\n").split(", ")
@@ -50,17 +51,18 @@ def endpoint():
     m2 = float(m2)
     if x1 > 0:
         # Finding b1: If x1 is positive, add it to 2 * m1
-        b1 = (2*m1)+x1
+        b1 = (2*m1)-x1
     else:
         # if x1 is neg, subtract it from 2 * m1
         b1 = (2*m1)-x1
     #Finding b2
     if y1 > 0:
         #if y1 is pos, add it to 2 * m2
-        b2 = (2*m2)+y1
+        b2 = (2*m2)-y1
     else:
         #if y1 is neg, subtract it from 2 * m2
         b2 = (2*m2)-y1
+
     b1 = float(b1)
     b2 = float(b2)
     print("The missing endpoint 'B' from midpoint (", m1, ", ", m2, ") and (", x1, ", ", y1, ") is: \n", "Point B = (", b1, b2, ")\n")
